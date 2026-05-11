@@ -1,0 +1,23 @@
+{
+  "name": "@paperclipai/acp-client",
+  "version": "1.0.0",
+  "description": "IDE-side ACP client library for connecting to workspace daemon",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@paperclipai/acp-types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
